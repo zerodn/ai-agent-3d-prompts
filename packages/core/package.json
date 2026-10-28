@@ -1,0 +1,15 @@
+{
+  "name": "@agent-world/core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic engine for AI Agent World: domain model, workflow state machine, deterministic simulation and the backend contract (mock + WebSocket).",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": ["src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit -p .",
+    "test": "node --experimental-strip-types --no-warnings test/simulate.ts"
+  }
+}

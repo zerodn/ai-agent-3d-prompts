@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "@agent-world/react/styles.css";
+
+html,
+body {
+  background: var(--color-ink-950);
+  color: var(--color-mist-100);
+  color-scheme: dark;
+}

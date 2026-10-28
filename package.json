@@ -1,0 +1,28 @@
+{
+  "name": "ai-agent-world",
+  "private": true,
+  "version": "0.1.0",
+  "description": "AI Agent World: a 3D office visualising a multi-agent system. Monorepo with a reusable engine (@agent-world/core), a React/3D layer (@agent-world/react) and a demo app.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @agent-world/web",
+    "build": "npm run build -w @agent-world/web",
+    "start": "npm run start -w @agent-world/web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint packages apps",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.3",
+    "typescript": "~5.9.3"
+  }
+}
